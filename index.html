@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Socheat - Full Stack Web Developer Portfolio</title>
+    <meta name="description" content="Hi, I'm Socheat, a Full Stack Web Developer building fast, modern, and responsive web apps using React, Node.js, and Laravel." />
+    <meta name="keywords" content="Socheat, Full Stack Developer, Web Developer, Frontend Developer, Backend Developer, React, Node.js, Laravel, JavaScript, Vue, PHP, MongoDB, Portfolio, Software Engineer" />
+    <meta name="author" content="Socheat" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Socheat - Full Stack Web Developer Portfolio" />
+    <meta property="og:description" content="Explore Socheat's portfolio of full stack projects built with React, Laravel, and Node.js." />
+    <meta property="og:image" content="https://kyo-tawny.vercel.app/images/preview.jpg" />
+    <meta property="og:url" content="https://kyo-tawny.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Socheat - Full Stack Web Developer" />
+    <meta name="twitter:description" content="See Socheat's latest full stack web projects and frontend designs." />
+    <meta name="twitter:image" content="https://kyo-tawny.vercel.app/images/preview.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kyo-tawny.vercel.app/" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+
+    <!-- PWA / Mobile Support -->
+    <meta name="theme-color" content="#ea580c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Socheat Portfolio" />
+    <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Tailwind & Custom CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <!-- Fixed Header -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm animate-slide-in-top"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3 w-full">
+          <span
+            class="text-2xl font-extrabold text-transparent bg-clip-text animate-gradient glow-text"
+          >
+            Socheat
+          </span>
+
+          <nav class="hidden md:flex gap-8 text-sm font-medium ml-auto">
+            <a
+              href="#home"
+              class="hover:text-orange-600 transition-all duration-300 hover:scale-110 animate-fade-in-up delay-100"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="hover:text-orange-600 transition-all duration-300 hover:scale-110 animate-fade-in-up delay-200"
+              >About Me</a
+            >
+            <a
+              href="#services"
+              class="hover:text-orange-600 transition-all duration-300 hover:scale-110 animate-fade-in-up delay-300"
+              >Services</a
+            >
+            <a
+              href="#projects"
+              class="hover:text-orange-600 transition-all duration-300 hover:scale-110 animate-fade-in-up delay-400"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-orange-600 transition-all duration-300 hover:scale-110 animate-fade-in-up delay-500"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- <a
+            href="#"
+            class="hidden md:inline-block bg-gradient-to-r from-orange-600 to-orange-700 text-white px-6 py-2 rounded-full text-sm font-medium hover:from-orange-700 hover:to-orange-800 transition-all duration-300 hover:scale-105 hover:shadow-lg ml-4 animate-fade-in-up delay-600"
+          >
+            Download CV
+          </a> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Add top padding to avoid overlapping with fixed header -->
+    <!-- <div class="pt-24"></div> -->
+
+    <!-- Main Hero Section -->
+    <main
+      class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between gap-12 min-h-screen"  id="home"
+    >
+      <!-- Text Section -->
+      <section class="flex-1 max-w-xl w-full mt-6">
+        <p
+          class="text-sm font-semibold text-orange-600 mb-2 animate-fade-in-left"
+        >
+          Hi, I am
+        </p>
+        <h2
+          class="text-3xl font-bold text-orange-600 mb-2 glow-text animate-fade-in-left delay-100"
+        >
+          Socheat Kodasia
+        </h2>
+        <h1
+          class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight animate-fade-in-left delay-200"
+        >
+          <span class="block">Full Stack &</span>
+          <span class="block text-transparent bg-clip-text animate-gradient"
+            >Web Developer</span
+          >
+        </h1>
+        <p
+          class="text-gray-700 text-lg mb-8 leading-relaxed animate-fade-in-left delay-300"
+        >
+          Passionate developer crafting digital experiences with modern
+          technologies. I transform ideas into beautiful, functional web
+          applications that make a difference.
+        </p>
+        <div class="flex gap-4 animate-fade-in-left delay-400">
+          <button
+            class="bg-gradient-to-r from-orange-600 to-orange-700 text-white px-8 py-3 rounded-full text-sm font-medium hover:from-orange-700 hover:to-orange-800 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            Hire Me
+          </button>
+          <button
+            class="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-full text-sm font-medium hover:bg-orange-600 hover:text-white transition-all duration-300 hover:scale-105"
+          >
+            View Work
+          </button>
+        </div>
+      </section>
+
+      <!-- Image + Social -->
+      <section
+        class="flex flex-col items-center animate-fade-in-right delay-500"
+      >
+        <div
+          class="relative overflow-hidden rounded-3xl shadow-2xl hover-lift animate-float"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-orange-600/20 to-transparent"
+          ></div>
+          <img
+            src="/images/zoro.jpg"
+            alt="zoro"
+            class="w-[650px] h-[400px] object-cover"
+          />
+        </div>
+
+        <div class="flex gap-6 text-2xl text-gray-800 mt-2">
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="hover:text-orange-600 transition-all duration-300 hover:scale-125 animate-pulse-custom delay-600"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="hover:text-orange-600 transition-all duration-300 hover:scale-125 animate-pulse-custom delay-700"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="hover:text-orange-600 transition-all duration-300 hover:scale-125 animate-pulse-custom delay-800"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            class="hover:text-orange-600 transition-all duration-300 hover:scale-125 animate-pulse-custom delay-700"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- About Me Section -->
+    <section class="bg-gray-50 py-20">
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12"
+      >
+        <!-- Image Section -->
+        <div class="animate-on-scroll hover-lift">
+          <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-transparent"
+            ></div>
+            <img
+              src="/images/zoro.jpg"
+              alt="About Portrait"
+              class="w-[600px] h-[400px] object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Text Content Section -->
+        <div id="about" class="flex-1 max-w-xl animate-on-scroll">
+          <h2 class="text-4xl font-extrabold text-black mb-6 glow-text">
+            About Me
+          </h2>
+          <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+            I'm a passionate full-stack developer with expertise in modern web
+            technologies. I love creating seamless user experiences and robust
+            backend solutions that drive business success.
+          </p>
+
+          <!-- Skills Section -->
+          <div class="space-y-6">
+            <div class="skill-item">
+              <div class="flex justify-between mb-2">
+                <label class="font-semibold text-black">Node.js</label>
+                <span class="text-orange-600 font-bold">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="flex justify-between mb-2">
+                <label class="font-semibold text-black">Nuxt.js</label>
+                <span class="text-orange-600 font-bold">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="flex justify-between mb-2">
+                <label class="font-semibold text-black">Laravel</label>
+                <span class="text-orange-600 font-bold">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="flex justify-between mb-2">
+                <label class="font-semibold text-black">Version Control</label>
+                <span class="text-orange-600 font-bold">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20" id="services">
+      <div class="text-center mb-16 animate-on-scroll">
+        <h2 class="text-4xl font-extrabold mb-4 glow-text">Services</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+          I offer comprehensive digital solutions to help bring your ideas to
+          life with cutting-edge technology and creative design.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 text-center hover-lift animate-on-scroll hover:shadow-2xl transition-all duration-500"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl flex items-center justify-center mx-auto mb-6 animate-pulse-custom"
+          >
+            <i class="fas fa-paint-brush text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-4">UI/UX Design</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Creating intuitive and engaging user interfaces that provide
+            exceptional user experiences across all platforms.
+          </p>
+        </div>
+
+        <div
+          class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center hover-lift animate-on-scroll hover:shadow-2xl transition-all duration-500"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-6 animate-pulse-custom"
+          >
+            <i class="fas fa-code text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-4">Web Development</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Building responsive, fast, and scalable web applications using
+            modern frameworks and best practices.
+          </p>
+        </div>
+
+        <div
+          class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 text-center hover-lift animate-on-scroll hover:shadow-2xl transition-all duration-500"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-6 animate-pulse-custom"
+          >
+            <i class="fas fa-mobile-alt text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-4">App Development</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Developing mobile applications that work seamlessly across iOS and
+            Android platforms with native performance.
+          </p>
+        </div>
+
+        <div
+          class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 text-center hover-lift animate-on-scroll hover:shadow-2xl transition-all duration-500"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-6 animate-pulse-custom"
+          >
+            <i class="fas fa-palette text-white text-2xl"></i>
+          </div>
+          <h3 class="font-bold text-xl mb-4">Graphic Design</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Creating stunning visual identities and graphics that communicate
+            your brand message effectively.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-gray-50 py-20" id="projects">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 animate-on-scroll">
+          <h1 class="font-extrabold text-4xl leading-tight mb-4 glow-text">
+            My Projects
+          </h1>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-12">
+            Explore my latest work and see how I transform ideas into digital
+            reality through innovative design and development.
+          </p>
+
+          <nav class="inline-flex flex-wrap justify-center gap-3 mb-12">
+            <button
+              class="px-6 py-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 animate-scale-in"
+            >
+              All
+            </button>
+            <button
+              class="px-6 py-3 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-300 rounded-full hover:bg-gray-200 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 animate-scale-in delay-100"
+            >
+              UI/UX
+            </button>
+            <button
+              class="px-6 py-3 text-sm font-medium text-white bg-gradient-to-r from-orange-600 to-orange-700 border border-orange-500 rounded-full cursor-default animate-scale-in delay-200"
+            >
+              Web Design
+            </button>
+            <button
+              class="px-6 py-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 animate-scale-in delay-300"
+            >
+              App Design
+            </button>
+            <button
+              class="px-6 py-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full hover:bg-gray-50 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500 animate-scale-in delay-400"
+            >
+              Graphic Design
+            </button>
+          </nav>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <article
+            class="bg-white rounded-2xl p-6 shadow-lg hover-lift animate-on-scroll transition-all duration-500 hover:shadow-2xl"
+          >
+            <div class="overflow-hidden rounded-xl mb-6">
+              <img
+                alt="AirCalling Landing Page Design"
+                class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+              />
+            </div>
+            <div class="text-center">
+              <p class="text-sm text-orange-500 font-semibold mb-2">
+                Web Design
+              </p>
+              <h2
+                class="font-bold text-lg leading-tight hover:text-orange-600 transition-colors"
+              >
+                AirCalling Landing Page Design
+              </h2>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article
+            class="bg-white rounded-2xl p-6 shadow-lg hover-lift animate-on-scroll transition-all duration-500 hover:shadow-2xl"
+          >
+            <div class="overflow-hidden rounded-xl mb-6">
+              <img
+                alt="Business Landing Page Design"
+                class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop"
+              />
+            </div>
+            <div class="text-center">
+              <p class="text-sm text-orange-500 font-semibold mb-2">
+                Web Design
+              </p>
+              <h2
+                class="font-bold text-lg leading-tight hover:text-orange-600 transition-colors"
+              >
+                Business Landing Page Design
+              </h2>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article
+            class="bg-white rounded-2xl p-6 shadow-lg hover-lift animate-on-scroll transition-all duration-500 hover:shadow-2xl"
+          >
+            <div class="overflow-hidden rounded-xl mb-6">
+              <img
+                alt="Ecom Web Page Design"
+                class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop"
+              />
+            </div>
+            <div class="text-center">
+              <p class="text-sm text-orange-500 font-semibold mb-2">
+                Web Design
+              </p>
+              <h2
+                class="font-bold text-lg leading-tight hover:text-orange-600 transition-colors"
+              >
+                Ecom Web Page Design
+              </h2>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-6 text-center max-w-4xl mx-auto" id="contact">
+      <div class="animate-on-scroll">
+        <h1 class="font-extrabold text-4xl md:text-5xl mb-6 glow-text">
+          Let's Design Together
+        </h1>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-12">
+          Ready to bring your vision to life? Let's collaborate and create
+          something amazing together. Drop me a message and let's get started!
+        </p>
+
+        <form
+          class="flex flex-col sm:flex-row justify-center gap-4 max-w-xl mx-auto"
+        >
+          <input
+            class="rounded-full border-2 border-gray-300 px-6 py-4 w-full text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 hover:border-orange-300"
+            placeholder="Enter Your Email"
+            type="email"
+          />
+          <button
+            class="bg-gradient-to-r from-orange-600 to-orange-700 text-white font-semibold rounded-full px-8 py-4 hover:from-orange-700 hover:to-orange-800 transition-all duration-300 hover:scale-105 hover:shadow-xl whitespace-nowrap"
+            type="submit"
+          >
+            Contact Me
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <nav
+          class="flex justify-center gap-8 text-sm mb-8 flex-wrap animate-on-scroll"
+        >
+          <a
+            class="hover:text-orange-400 transition-colors duration-300 hover:scale-110"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="hover:text-orange-400 transition-colors duration-300 hover:scale-110"
+            href="#about"
+            >About Me</a
+          >
+          <a
+            class="hover:text-orange-400 transition-colors duration-300 hover:scale-110"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="hover:text-orange-400 transition-colors duration-300 hover:scale-110"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="hover:text-orange-400 transition-colors duration-300 hover:scale-110"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+
+        <div class="flex justify-center gap-6 text-2xl mb-8 animate-on-scroll">
+          <a
+            aria-label="Facebook"
+            class="hover:text-orange-400 transition-all duration-300 hover:scale-125"
+            href="#"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            aria-label="Twitter"
+            class="hover:text-orange-400 transition-all duration-300 hover:scale-125"
+            href="#"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            aria-label="Instagram"
+            class="hover:text-orange-400 transition-all duration-300 hover:scale-125"
+            href="#"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            aria-label="LinkedIn"
+            class="hover:text-orange-400 transition-all duration-300 hover:scale-125"
+            href="#"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 animate-on-scroll">
+          <p class="text-gray-400 text-sm">
+            © 2025
+            <span class="font-semibold text-orange-400">Socheatichiro Kodasia</span
+            >. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+      // Register service worker for PWA
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>
